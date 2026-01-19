@@ -1,0 +1,149 @@
+:root {
+  --primary: #6366f1;
+  --success: #10b981;
+  --danger: #ef4444;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --bg-table: #ffffff;
+}
+
+.access-container {
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.access-header {
+  margin-bottom: 2rem;
+}
+
+.access-header h2 {
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.access-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.table-wrapper {
+  background: var(--bg-table);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.access-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.access-table th {
+  background: #f1f5f9;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.access-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.access-table tr:hover {
+  background-color: #fcfdfe;
+}
+
+/* Staff Column with Avatar */
+.staff-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.staff-avatar {
+  width: 32px;
+  height: 32px;
+  background: #e2e8f0;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.user-code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Status Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-active { background: #dcfce7; color: #15803d; }
+.badge-blocked { background: #fee2e2; color: #b91c1c; }
+.badge-null { background: #f1f5f9; color: #64748b; }
+
+/* The Toggle Switch */
+.text-center { text-align: center; }
+
+.access-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.access-switch input { opacity: 0; width: 0; height: 0; }
+
+.access-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #cbd5e1;
+  transition: .3s;
+  border-radius: 20px;
+}
+
+.access-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+input:checked + .access-slider { background-color: var(--success); }
+input:checked + .access-slider:before { transform: translateX(20px); }
+
+input:disabled + .access-slider {
+  background-color: #f1f5f9;
+  cursor: not-allowed;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  color: var(--primary);
+  font-weight: 600;
+}

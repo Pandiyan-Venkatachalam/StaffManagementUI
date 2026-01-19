@@ -1,0 +1,192 @@
+.dashboard-container {
+  padding: 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.chart-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 400px;
+}
+
+.card-title {
+  margin-bottom: 20px;
+  color: #334155;
+  font-weight: 600;
+}
+
+/* Role Card Specifics */
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  height: 300px;
+}
+
+.chart-box {
+  position: relative;
+  height: 220px;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.chart-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.chart-center-text h1 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 2rem;
+}
+
+.chart-center-text span {
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+/* Scrollable List */
+.scroll-list {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 5px solid #ccc;
+}
+
+.role-name {
+  font-weight: 600;
+  color: #475569;
+  font-size: 13px;
+}
+
+.role-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.role-count {
+  font-weight: 700;
+}
+
+.role-percent {
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  background: #dbeafe;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Department Card */
+.chart-wrapper {
+  height: 280px;
+}
+
+/* Task Analytics Card */
+.task-card {
+  grid-column: span 2;
+  height: auto;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.task-main-stat h1 {
+  font-size: 64px;
+  color: #2563eb;
+  margin: 0;
+  font-weight: 900;
+}
+
+.task-main-stat span {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.task-progress-box {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.progress-bar-bg {
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: #2563eb;
+  height: 100%;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Custom Scrollbar Styling */
+.custom-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.loading-container {
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+}
