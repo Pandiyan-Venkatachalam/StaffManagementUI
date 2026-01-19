@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5286/api', 
+  baseURL: 'https://staffmanagementapi-production.up.railway.app/api', 
 });
 
 API.interceptors.request.use((config) => {
@@ -17,5 +17,6 @@ API.interceptors.request.use((config) => {
 }, (error) => {
     return Promise.reject(error);
 });
+
 
 export default API;
